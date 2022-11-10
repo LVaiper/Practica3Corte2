@@ -1,0 +1,67 @@
+header{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    height: 100px;
+    padding: 1em;
+}
+body{
+    background-color: slategray;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 
+                    Arial, sans-serif;
+}
+
+h3{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 
+                    Arial, sans-serif;
+    text-align: center;
+}
+
+
+#contenido{
+    background-color: silver;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0px 10px 15px 0 grey;
+}
+
+#botones{
+    text-align: right;
+}
+
+#btnCalcular{
+    font-size: 17.5px;
+    color: rgb(0, 0, 0);
+    font-family:  Georgia;
+    border-radius: .4em;
+}
+
+#btnCalcular:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+}
+
+#btnLimpiar{
+    font-size: 17.5px;
+    color: rgb(0, 0, 0);
+    font-family:  Georgia;
+    border-radius: .4em;
+}
+
+#btnLimpiar:hover{
+    cursor: pointer;
+    background-color: white;
+    color: darkcyan;
+}
