@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>POO3</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/Main.js"></script>
+</head>
+<body>
+    
+
+    <header>
+        <h1>Cotización</h1>
+    </header>
+    <section>
+        <h2>Agencia de automóviles XYZ</h2>
+        <div id="contenido">
+            <label for="">Valor del automóvil</label>
+                <input type="text" id="txtValor" name="txtValor">
+                <label id="errorValor" for="" style="color:red;visibility: hidden;">*</label>
+                
+            <br>
+            <br>
+                <label for="">Planes de Crédito</label>
+                <select id="cmbPlanes" name="cmbPlanes">
+                    <option value=0.125>12 Meses</option>
+                    <option value=0.172>18 Meses</option>
+                    <option value=0.21 >24 Meses</option>
+                    <option value=0.26 >36 Meses</option>
+                    <option value=0.45 >48 Meses</option>
+                </select>
+            <br>
+            <br>
+                <h3>Resultados cotizados:</h3>
+
+            <label for="">Enganche</label>
+                <input type="text" id="txtEnganche" name="txtEnganche" readonly="readonly">
+            <br>
+            <br>
+            <label for="">Total a financiar</label>
+                <input type="text" id="txtFinanciar" name="txtFinanciar" readonly="readonly">
+          
+            <br>
+            <br>
+            <label for="">Pago Mensual</label>
+                <input type="text" id="txtPago" name="txtPago" readonly="readonly">
+        
+            <div id="botones">
+                <button id="btnCalcular" onclick="calcularEnganche();calcularFinanciar();calcularMensualidad();">Calcular</button>
+                <button id="btnLimpiar" onclick="limpiarParrafo()">Limpiar</button>
+            </div>  
+        </div>
+   
+        </section>
+
+        <br>
+    <footer>
+        <h3  style="color: black;">Ivan Enrique Gomez Ruelas</h3>
+    </footer>
+<div style="text-align:right;position:fixed;z-index:9999999;bottom:0;width:auto;right:1%;cursor:pointer;line-height:0;display:block!important">
+            <script>
+            const btnCalcular = document.querySelector("#btnCalcular")
+                btnCalcular.addEventListener('click',()=>{
+
+                    valor = document.querySelector("#txtValor").value;
+                    errorValor = document.querySelector("#errorValor");
+                    valor=="" ? errorValor.style.visibility = 'visible' : errorValor.style.visibility = 'hidden'
+
+                    if(valor==0){
+                        alert("Faltan datos por capturar")
+                    }else{
+                        
+                    }
+                })
+            </script>
+
+
+</html>
